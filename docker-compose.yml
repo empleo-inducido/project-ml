@@ -1,0 +1,7 @@
+version: "1.0"
+services:
+  project:
+    build: .
+    image: project:1
+    container_name: project-ml
+    command: tail -f /dev/null
