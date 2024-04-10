@@ -12,6 +12,7 @@ COPY . /home/project
 
 # Instala las dependencias especificadas en el archivo requirements.txt
 RUN pip install --upgrade pip
+RUN pip install --upgrade awscli pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define el comando por defecto cuando el contenedor se ejecuta
