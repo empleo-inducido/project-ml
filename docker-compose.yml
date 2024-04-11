@@ -2,6 +2,6 @@ version: "1.1"
 services:
   project:
     build: .
-    image: project-ml:cooler-terminal
+    image: project-ml:3
     container_name: project-ml
     command: tail -f /dev/null
