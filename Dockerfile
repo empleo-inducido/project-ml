@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y curl
 #-tengo que poner y-
 RUN apt-get install unzip
 RUN curl -s https://ohmyposh.dev/install.sh | bash -s
-RUN oh-my-posh font install
 #-elige la fuente-
 RUN echo 'export TERM=xterm-256color' >> ~/.bashrc
 RUN mkdir ~/oh-my-posh
