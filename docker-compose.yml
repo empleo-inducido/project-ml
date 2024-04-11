@@ -3,5 +3,5 @@ services:
   project:
     build: .
     image: project:style
-    container_name: project-ml-cooler
+    container_name: project-ml
     command: tail -f /dev/null
