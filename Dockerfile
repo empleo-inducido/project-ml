@@ -5,7 +5,7 @@ FROM python:3.10-slim
 RUN apt-get update && apt-get install -y git
 RUN apt-get install nano
 RUN apt-get install wget
-RUN apt-get install curl
+RUN apt-get update && apt-get install -y curl
 #-tengo que poner y-
 RUN apt-get install unzip
 RUN curl -s https://ohmyposh.dev/install.sh | bash -s
