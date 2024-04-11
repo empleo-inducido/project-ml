@@ -1,7 +1,7 @@
-version: "1.0"
+version: "1.1"
 services:
   project:
     build: .
-    image: project:1
-    container_name: project-ml
+    image: project:style
+    container_name: project-ml-cooler
     command: tail -f /dev/null
