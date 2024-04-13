@@ -3,10 +3,10 @@ FROM python:3.10-slim
 
 # Instala git
 RUN apt-get update && apt-get install -y git
-# Clona el proyecto
-RUN git clone https://github.com/empleo-inducido/project-ml.git /home
 # Establece el directorio de trabajo en /home/project
-WORKDIR /home/project-ml
+WORKDIR /home/project
+# Copia el contenido de la raíz donde está el Dockerfile al directorio /home/project
+COPY . /home/project
 # Instala cosas que pueden servir
 RUN apt-get install nano
 RUN apt-get install wget
