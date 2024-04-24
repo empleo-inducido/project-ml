@@ -76,9 +76,9 @@ coverage.xml
 .ipynb_checkpoints/
 
 # exclude data and trained models from source control by default
-src/models/*
-src/data/raw/*
-src/data/processed/*
+models/*
+data/processed/*
+data/raw/*
 
 # Mac OS-specific storage files
 .DS_Store
