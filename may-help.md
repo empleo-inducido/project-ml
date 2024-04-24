@@ -3,11 +3,11 @@
 El proyecto se puede obtener descargando la imagen de Docker Hub. Para obtener la imagen y correr un contenedor ejecuta los siguientes comandos
 
 ```
-docker pull rodolfojaramillo/project-ml:3
+docker pull rodolfojaramillo/project-ml:initial
 ```
 
 ```
-docker run -it --name project rodolfojaramillo/project-ml:3
+docker run -it --name project rodolfojaramillo/project-ml:initial
 ```
 
 También puedes:
