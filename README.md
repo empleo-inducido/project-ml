@@ -1,73 +1,30 @@
-project-ml
-==============================
+# Proyecto: Clasificación de Pacientes para Detectar Dengue: Un Enfoque de Aprendizaje Automáticox
+El dengue es una enfermedad causada por un virus y se transmite a las personas por la picadura del mosquito portador de la enfermedad. Actualmente no hay una vacuna para combatirlo y
+es una enfermedad común en regiones tropicales y subtropicales como Centroamérica, Sudamérica y lugares donde se estanca el agua. De acuerdo con la Secretaría de Salud, en su último informe de
+[Semana Epidemiológica 15](https://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-dengue-2024), se menciona que, en lo que va del 2024 se han notificado 179
+defunciones por probable dengue, las cuales 14 están confirmadas, 146 se encuentran en estudio y 19 se han descartado; defunciones que corresponden a diferentes estados de la república mexicana. 
 
-Proyecto de Machine Learning
+## 1. Problema a resolver
+El objetivo de este proyecto es poder tener un modelo de detección temprana de dengue en pacientes; saber si un paciente es probable de tener o no, esta enfermedad. Esto para poder atacar la 
+enfermedad en su etapa más temprana posible.
 
-Instructions
-------------
-1. Clone the repo.
-1. Run `make dirs` to create the missing parts of the directory structure described below.
-1. *Optional:* Run `make virtualenv` to create a python virtual environment. Skip if using conda or some other env manager.
-    1. Run `source env/bin/activate` to activate the virtualenv.
-1. Run `make requirements` to install required python packages.
-1. Put the raw data in `data/raw`.
-1. To save the raw data to the DVC cache, run `dvc commit raw_data.dvc`
-1. Edit the code files to your heart's desire.
-1. Process your data, train and evaluate your model using `dvc repro eval.dvc` or `make reproduce`
-1. When you're happy with the result, commit files (including .dvc files) to git.
+## 2. Importancia
+Como se mencionó antes, el dengue es una enfermedad de la cual aún no hay vacuna y ha sido causa de muerte, poder tener una detección temprana puede salvar la vida de una persona. Además de eso,
+podría ayudar a hacer un filtrado de los pacientes y así atender más rápido a los que sean más propensos a tener dicha enfermedad, adminisitrando mejor los tiempos y recursos de los doctores y hospitales.
 
-Project Organization
-------------
+## 3. Métricas para medir el impacto
+Dado que estamos tratando un tema de salud, preferimos que nuestro modelo detecte más casos de dengue de los que realmente hay (aunque sean falsos) que perder alguno. Por eso, nos enfocamos en maximizar 
+la Sensibilidad del modelo, que mide qué tan bien atrapa los casos de dengue reales. Queremos asegurarnos de que el modelo capture la mayoría de los casos positivos, incluso si eso significa que a veces 
+se equivoque y diga que alguien tiene dengue cuando no lo tiene.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make dirs` or `make clean`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── raw_data.dvc       <- Keeps the raw data versioned.
-    ├── data
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── dvc.lock           <- The version definition of each dependency, stage, and output from the 
-    │                         data pipeline.
-    ├── dvc.yaml           <- Defining the data pipeline stages, dependencies, and outputs.
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures                 <- Generated graphics and figures to be used in reporting
-    │   └── metrics.txt             <- Relevant metrics after evaluating the model.
-    │   └── training_metrics.txt    <- Relevant metrics from training the model.
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   ├── __init__.py
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── __init__.py
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       ├── __init__.py
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+## 4. Técnicas de aprendizaje 
+Nuestro enfoque principal será utilizar una red neuronal artificial para abordar la clasificación de los pacientes en tres categorías distintas: "Sí", "No", y "Probable". Estas clases fueron escogidas
+debido a la naturaleza de nuestros datos.
 
+## 5. Métricas que miden la calidad del modelo de aprendizaje
+Para evaluar la efectividad y la precisión de nuestro modelo, nos centraremos en la curva ROC. Esta métrica nos proporciona una visión detallada de cómo se comporta nuestro modelo en términos de
+sensibilidad y especificidad en diferentes puntos de corte. Además, nos permite ajustar los umbrales de decisión para optimizar el equilibrio entre la tasa de verdaderos positivos y la tasa de falsos
+positivos, lo que es crucial para garantizar una detección precisa y oportuna del dengue en los pacientes.
 
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+## 6. 
+science project template</a>. #cookiecutterdatascience</small></p>
