@@ -58,4 +58,5 @@ Las métricas de calidad del modelo y las métricas de impacto de la solución e
 
 **Accuracy y confianza en el modelo:** El accuracy del modelo proporciona una medida general de su precisión al clasificar tanto casos positivos como negativos. Un alto accuracy indica una mayor confianza en las predicciones del modelo. Esta confianza es fundamental para que los profesionales de la salud y los responsables de la toma de decisiones confíen en la solución y la implementen de manera efectiva en entornos clínicos. Cuanto mayor sea el accuracy, mayor será la confianza en la solución y, por lo tanto, su impacto en la detección y tratamiento de la enfermedad.
 
+
 science project template</a>. #cookiecutterdatascience</small></p>
