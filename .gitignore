@@ -1,4 +1,4 @@
 # exclude data and trained models from source control by default
-data/raw/*
 data/processed/*
+data/raw/*
 models/*
