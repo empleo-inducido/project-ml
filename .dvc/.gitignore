@@ -1,7 +1,10 @@
 /config.local
 /tmp
 <<<<<<< HEAD
+<<<<<<< HEAD
 #/cache
+=======
+>>>>>>> 4263501 (fix cache)
 =======
 >>>>>>> 4263501 (fix cache)
 /cache
