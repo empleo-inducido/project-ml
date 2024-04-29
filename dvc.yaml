@@ -1,0 +1,11 @@
+stages:
+  make_dataset:
+    cmd: python src/data/make_dataset.py data/raw/dengue-raw.csv
+    deps:
+    - data/raw/dengue-raw.csv
+    - src/data/make_dataset.py
+    params:
+    - make_dataset.seed
+    - make_dataset.split
+    outs:
+    - data/processed
