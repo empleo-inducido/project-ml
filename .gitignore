@@ -1,3 +1,2 @@
 # exclude data and trained models from source control by default
-
 notebooks/mein
