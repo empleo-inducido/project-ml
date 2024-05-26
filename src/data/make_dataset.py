@@ -54,21 +54,6 @@ def prepare_data(input_file, output_dir, seed=None, split=0.2, stratify_col=None
     save_data(train, os.path.join(train_dir, 'train-dengue.csv'))
     save_data(test, os.path.join(test_dir, 'test-dengue.csv'))
 
-    # Verificar la estratificación y la proporción del split
-    if stratify_col:
-        print("Distribución de la columna de estratificación en el conjunto de entrenamiento:")
-        print(train[stratify_col].value_counts(normalize=True))
-        print("Distribución de la columna de estratificación en el conjunto de prueba:")
-        print(test[stratify_col].value_counts(normalize=True))
-    
-    # Verificar la proporción del split
-    total_rows = df.shape[0]
-    train_rows = train.shape[0]
-    test_rows = test.shape[0]
-    print(f"Total de filas: {total_rows}")
-    print(f"Filas en el conjunto de entrenamiento: {train_rows} ({train_rows / total_rows:.2%})")
-    print(f"Filas en el conjunto de prueba: {test_rows} ({test_rows / total_rows:.2%})")
-
 def save_data(data, path):
     data.to_csv(path, index=False)
 
@@ -76,6 +61,7 @@ if __name__ == "__main__":
     params = yaml.safe_load(open("/home/project/params.yaml"))["make_dataset"]
     split = params["split"]
     seed = params["seed"]
+    split = params["split"]
 
     # Obtener los argumentos de línea de comandos
     input_file = sys.argv[1]
