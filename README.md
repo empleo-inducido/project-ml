@@ -24,7 +24,7 @@ Además de su impacto en la mortalidad, la detección temprana ofrece beneficios
 
 - **Prevención de Brotes:** Medir la capacidad del modelo para prevenir la propagación del dengue al identificar y aislar rápidamente a los pacientes infectados, lo que podría reducir la incidencia de brotes epidémicos en la comunidad.
 
-- **ficiencia en la Utilización de Recursos:** Medir la optimización de los recursos médicos y financieros al evitar diagnósticos erróneos y tratamientos innecesarios mediante una detección más precisa y temprana del dengue.
+- **Eficiencia en la Utilización de Recursos:** Medir la optimización de los recursos médicos y financieros al evitar diagnósticos erróneos y tratamientos innecesarios mediante una detección más precisa y temprana del dengue.
 
 - **Reducción de Costos de Salud:** Medir el ahorro en los costos asociados con el tratamiento y manejo de casos graves de dengue al identificar y tratar los casos de manera temprana, lo que podría reducir la necesidad de intervenciones médicas costosas y prolongadas.
 
