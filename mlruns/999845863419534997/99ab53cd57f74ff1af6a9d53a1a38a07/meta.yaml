@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/99ab53cd57f74ff1af6a9d53a1a38a07/artifacts
+end_time: 1716706226136
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 99ab53cd57f74ff1af6a9d53a1a38a07
+run_name: adaptable-cub-0
+run_uuid: 99ab53cd57f74ff1af6a9d53a1a38a07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716706225991
+status: 4
+tags: []
+user_id: root
