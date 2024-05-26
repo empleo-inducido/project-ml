@@ -7,17 +7,21 @@ import random
 import yaml
 
 def prepare_data(input_file, output_dir, seed=None, split=0.2, stratify_col=None):
+def prepare_data(input_file, output_dir, seed=None, split=0.2, stratify_col=None):
     if not os.path.exists(input_file):
         print(f"Error: El archivo {input_file} no existe.")
         sys.exit(1)
         
     if seed:
         np.random.seed(seed)
+        np.random.seed(seed)
         
     # Lectura del archivo
     raw_df = pd.read_csv(input_file)
 
     # Seleccionar columnas irrelevantes
+    columnas_irrelevantes = ['FECHA_ACTUALIZACION', 'ID_REGISTRO', 'HABLA_LENGUA_INDIG', 'INDIGENA', 'ENTIDAD_UM_NOTIF',
+                             'MUNICIPIO_UM_NOTIF', 'INSTITUCION_UM_NOTIF', 'DICTAMEN', 'TOMA_MUESTRA', 'ENTIDAD_ASIG', 'MUNICIPIO_ASIG']
     columnas_irrelevantes = ['FECHA_ACTUALIZACION', 'ID_REGISTRO', 'HABLA_LENGUA_INDIG', 'INDIGENA', 'ENTIDAD_UM_NOTIF',
                              'MUNICIPIO_UM_NOTIF', 'INSTITUCION_UM_NOTIF', 'DICTAMEN', 'TOMA_MUESTRA', 'ENTIDAD_ASIG', 'MUNICIPIO_ASIG']
 
@@ -33,6 +37,15 @@ def prepare_data(input_file, output_dir, seed=None, split=0.2, stratify_col=None
     df['MES_SIGN_SINTOMAS'] = df['FECHA_SIGN_SINTOMAS'].dt.month
     df['DIA_SIGN_SINTOMAS'] = df['FECHA_SIGN_SINTOMAS'].dt.day
     df['SEMANA_SIGN_SINTOMAS'] = df['FECHA_SIGN_SINTOMAS'].dt.isocalendar().week
+    df.drop('FECHA_SIGN_SINTOMAS', axis=1, inplace=True)
+
+    if stratify_col and stratify_col in df.columns:
+        stratify_values = df[stratify_col]
+    else:
+        stratify_values = None
+
+    # Dividir los datos usando el split
+    train, test = train_test_split(df, test_size=split, random_state=seed, stratify=stratify_values)
     df.drop('FECHA_SIGN_SINTOMAS', axis=1, inplace=True)
 
     if stratify_col and stratify_col in df.columns:
@@ -75,6 +88,7 @@ if __name__ == "__main__":
     params = yaml.safe_load(open("/home/project/params.yaml"))["make_dataset"]
     split = params["split"]
     seed = params["seed"]
+    split = params["split"]
 
     # Obtener los argumentos de línea de comandos
     input_file = sys.argv[1]
