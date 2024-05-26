@@ -1,11 +1,13 @@
 import pandas as pd
 import os
+import re
 import numpy as np
 from sklearn.model_selection import train_test_split
 import sys
+import random
 import yaml
 
-def prepare_data(input_file, output_dir, seed, stratify_col=None):
+def prepare_data(input_file, output_dir, seed=None, split=0.2, stratify_col=None):
     if not os.path.exists(input_file):
         print(f"Error: El archivo {input_file} no existe.")
         sys.exit(1)
@@ -40,8 +42,8 @@ def prepare_data(input_file, output_dir, seed, stratify_col=None):
         stratify_values = None
 
     # Dividir los datos usando el split
-    train, test = train_test_split(df, test_size=0.2, random_state=seed, stratify=stratify_values)
-
+    train, test = train_test_split(df, test_size=split, random_state=seed, stratify=stratify_values)
+    
     os.makedirs(output_dir, exist_ok=True)
     train_dir = os.path.join(output_dir, 'train')
     test_dir = os.path.join(output_dir, 'test')
@@ -72,12 +74,13 @@ def save_data(data, path):
 
 if __name__ == "__main__":
     params = yaml.safe_load(open("/home/project/params.yaml"))["make_dataset"]
+    split = params["split"]
     seed = params["seed"]
 
     # Obtener los argumentos de línea de comandos
-    input_file = "/home/project/data/raw/dengue-raw.csv"
+    input_file = sys.argv[1]
     output_dir = 'data/processed/'
     # Llamar a la función para preparar los datos
-    prepare_data(input_file, output_dir, seed=seed, stratify_col='ESTATUS_CASO')
+    prepare_data(input_file, output_dir, seed, split, stratify_col='ESTATUS_CASO')
 
 
