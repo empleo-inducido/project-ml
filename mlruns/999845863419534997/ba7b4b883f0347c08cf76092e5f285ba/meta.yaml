@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/ba7b4b883f0347c08cf76092e5f285ba/artifacts
+end_time: 1716705631624
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: ba7b4b883f0347c08cf76092e5f285ba
+run_name: unequaled-cod-323
+run_uuid: ba7b4b883f0347c08cf76092e5f285ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716705631404
+status: 4
+tags: []
+user_id: root
