@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/9dd308a9898c4467b9e2295f1d7148fc/artifacts
+end_time: 1716707595948
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 9dd308a9898c4467b9e2295f1d7148fc
+run_name: kindly-kite-355
+run_uuid: 9dd308a9898c4467b9e2295f1d7148fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716707595777
+status: 4
+tags: []
+user_id: root

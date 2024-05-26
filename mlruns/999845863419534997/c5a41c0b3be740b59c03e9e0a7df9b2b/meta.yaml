@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/c5a41c0b3be740b59c03e9e0a7df9b2b/artifacts
+end_time: 1716706208406
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: c5a41c0b3be740b59c03e9e0a7df9b2b
+run_name: debonair-shrimp-188
+run_uuid: c5a41c0b3be740b59c03e9e0a7df9b2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716706208162
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/0be5632e91124d27ae95f5ac36d900d1/artifacts
+end_time: 1716707817699
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 0be5632e91124d27ae95f5ac36d900d1
+run_name: industrious-gull-745
+run_uuid: 0be5632e91124d27ae95f5ac36d900d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716707811557
+status: 3
+tags: []
+user_id: root
