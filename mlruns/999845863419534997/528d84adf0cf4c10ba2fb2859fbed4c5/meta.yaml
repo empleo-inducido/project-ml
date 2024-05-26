@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/528d84adf0cf4c10ba2fb2859fbed4c5/artifacts
+end_time: 1716705663741
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 528d84adf0cf4c10ba2fb2859fbed4c5
+run_name: zealous-midge-153
+run_uuid: 528d84adf0cf4c10ba2fb2859fbed4c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716705663591
+status: 4
+tags: []
+user_id: root

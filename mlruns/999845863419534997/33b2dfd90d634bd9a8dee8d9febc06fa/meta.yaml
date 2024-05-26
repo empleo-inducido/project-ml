@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/33b2dfd90d634bd9a8dee8d9febc06fa/artifacts
+end_time: 1716705039945
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 33b2dfd90d634bd9a8dee8d9febc06fa
+run_name: adorable-whale-84
+run_uuid: 33b2dfd90d634bd9a8dee8d9febc06fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716705039782
+status: 4
+tags: []
+user_id: root
