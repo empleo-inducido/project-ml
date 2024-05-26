@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/4ead13f7b1494f20bef1ceaaff3abc58/artifacts
+end_time: 1716708147995
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 4ead13f7b1494f20bef1ceaaff3abc58
+run_name: vaunted-stag-492
+run_uuid: 4ead13f7b1494f20bef1ceaaff3abc58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716708147477
+status: 3
+tags: []
+user_id: root
