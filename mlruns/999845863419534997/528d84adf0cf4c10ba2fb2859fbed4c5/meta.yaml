@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/999845863419534997/528d84adf0cf4c10ba2fb2859fbed4c5/artifacts
+deleted_time: 1716776798010
 end_time: 1716705663741
 entry_point_name: ''
 experiment_id: '999845863419534997'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 528d84adf0cf4c10ba2fb2859fbed4c5
 run_name: zealous-midge-153
 run_uuid: 528d84adf0cf4c10ba2fb2859fbed4c5
