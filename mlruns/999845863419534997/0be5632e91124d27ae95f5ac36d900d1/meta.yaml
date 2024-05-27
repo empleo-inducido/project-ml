@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/999845863419534997/0be5632e91124d27ae95f5ac36d900d1/artifacts
+deleted_time: 1716776796982
 end_time: 1716707817699
 entry_point_name: ''
 experiment_id: '999845863419534997'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0be5632e91124d27ae95f5ac36d900d1
 run_name: industrious-gull-745
 run_uuid: 0be5632e91124d27ae95f5ac36d900d1

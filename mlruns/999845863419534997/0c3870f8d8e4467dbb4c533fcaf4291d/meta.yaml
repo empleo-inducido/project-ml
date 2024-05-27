@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/999845863419534997/0c3870f8d8e4467dbb4c533fcaf4291d/artifacts
+deleted_time: 1716776797105
 end_time: 1716707674649
 entry_point_name: ''
 experiment_id: '999845863419534997'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0c3870f8d8e4467dbb4c533fcaf4291d
 run_name: salty-donkey-832
 run_uuid: 0c3870f8d8e4467dbb4c533fcaf4291d

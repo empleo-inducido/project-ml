@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/999845863419534997/9dd308a9898c4467b9e2295f1d7148fc/artifacts
+deleted_time: 1716776797200
 end_time: 1716707595948
 entry_point_name: ''
 experiment_id: '999845863419534997'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 9dd308a9898c4467b9e2295f1d7148fc
 run_name: kindly-kite-355
 run_uuid: 9dd308a9898c4467b9e2295f1d7148fc

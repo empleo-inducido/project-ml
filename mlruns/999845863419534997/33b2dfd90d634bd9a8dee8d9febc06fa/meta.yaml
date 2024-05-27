@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/999845863419534997/33b2dfd90d634bd9a8dee8d9febc06fa/artifacts
+deleted_time: 1716776798100
 end_time: 1716705039945
 entry_point_name: ''
 experiment_id: '999845863419534997'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 33b2dfd90d634bd9a8dee8d9febc06fa
 run_name: adorable-whale-84
 run_uuid: 33b2dfd90d634bd9a8dee8d9febc06fa
