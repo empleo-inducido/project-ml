@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/f101979f5a2d49639d20796c7c7b4aa0/artifacts
+end_time: 1717093392263
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: f101979f5a2d49639d20796c7c7b4aa0
+run_name: worried-quail-57
+run_uuid: f101979f5a2d49639d20796c7c7b4aa0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717093369471
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc

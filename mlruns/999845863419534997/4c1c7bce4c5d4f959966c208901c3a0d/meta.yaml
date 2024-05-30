@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/4c1c7bce4c5d4f959966c208901c3a0d/artifacts
+end_time: 1717093392263
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 4c1c7bce4c5d4f959966c208901c3a0d
+run_name: clumsy-fish-716
+run_uuid: 4c1c7bce4c5d4f959966c208901c3a0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717093369471
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc

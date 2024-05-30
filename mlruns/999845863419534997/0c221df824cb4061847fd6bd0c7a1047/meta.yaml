@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/0c221df824cb4061847fd6bd0c7a1047/artifacts
+end_time: 1717088511897
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 0c221df824cb4061847fd6bd0c7a1047
+run_name: worried-panda-176
+run_uuid: 0c221df824cb4061847fd6bd0c7a1047
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717088475745
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/c2928568259443c1bd293aa08c01dfce/artifacts
+end_time: 1717091838187
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: c2928568259443c1bd293aa08c01dfce
+run_name: legendary-shark-240
+run_uuid: c2928568259443c1bd293aa08c01dfce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717090894568
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc
