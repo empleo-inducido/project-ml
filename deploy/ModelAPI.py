@@ -14,6 +14,8 @@ model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{model_version
 # Crear una instancia de FastAPI
 app = FastAPI()
 
+# Se crea la función que usa el modelo para predecir con el decorador que indica el metodo 
+# con el que se hara request y la dirección deltro del puerto
 @app.post("/predict/")
 def predict(data: dict):
     try:
