@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/3a467d47e148411ca22ee7f6ddbe275a/artifacts
+end_time: 1717090855118
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 3a467d47e148411ca22ee7f6ddbe275a
+run_name: gifted-rook-226
+run_uuid: 3a467d47e148411ca22ee7f6ddbe275a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717090706628
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc
