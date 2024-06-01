@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/b6e285e51b6c45509a07ec0666c2e4bf/artifacts
+end_time: 1717213324914
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: b6e285e51b6c45509a07ec0666c2e4bf
+run_name: chill-stork-756
+run_uuid: b6e285e51b6c45509a07ec0666c2e4bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717213291686
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc

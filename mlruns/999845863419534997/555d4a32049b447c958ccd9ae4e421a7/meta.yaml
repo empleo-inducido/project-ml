@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/999845863419534997/555d4a32049b447c958ccd9ae4e421a7/artifacts
+end_time: 1717220439244
+entry_point_name: ''
+experiment_id: '999845863419534997'
+lifecycle_stage: active
+run_id: 555d4a32049b447c958ccd9ae4e421a7
+run_name: adaptable-tern-275
+run_uuid: 555d4a32049b447c958ccd9ae4e421a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717220412857
+status: 3
+tags: []
+user_id: f2f8107fd1a21ee0e505956588af39bafa991adc
