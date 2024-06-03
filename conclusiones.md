@@ -10,9 +10,9 @@ El mejor modelo obtenido fue **GradientBoostingClassifier_20240602_233945**, con
 
 La matriz de confusión muestra que el modelo es efectivo para detectar pacientes de manejo ambulatorio (etiqueta 1), que en este contexto representan los negativos. En comparación con otros modelos, el Gradient Boosting obtuvo un valor de especificidad alto:
 
-\begin{equation*}
+\begin{equation}
 Especificidad = \frac{TN}{TN+FP} = \frac{5947}{5947 + 589} = 90.99%
-\end{equation*}
+\end{equation}
 
 Esto indica que cuando el modelo detecta un paciente ambulatorio, solo el 9% de las veces se equivoca. Esto lo convierte en un modelo muy adecuado para diagnóstico o confirmación, aunque no tanto para la detección de pacientes hospitalarios.
 
