@@ -23,37 +23,39 @@ Además de las métricas tradicionales de calidad del modelo, es importante cons
 ### 1. Tasa de Hospitalización Correcta
 Esta métrica mide el porcentaje de pacientes que realmente necesitan hospitalización y que son correctamente identificados por el modelo.
 
-\[ \text{Tasa de Hospitalización Correcta} = \frac{\text{Pacientes Hospitalizados Correctamente Identificados}}{\text{Total de Pacientes que Requieren Hospitalización}} \]
+$$
+\text{Tasa de Hospitalización Correcta} = \frac{\text{Pacientes Hospitalizados Correctamente Identificados}}{\text{Total de Pacientes que Requieren Hospitalización}}
+$$
 
 ### 2. Tasa de Manejo Ambulatorio Correcto
 Mide el porcentaje de pacientes que pueden ser manejados ambulatoriamente y que son correctamente identificados por el modelo.
 
-\[ \text{Tasa de Manejo Ambulatorio Correcto} = \frac{\text{Pacientes Ambulatorios Correctamente Identificados}}{\text{Total de Pacientes que Pueden Ser Ambulatorios}} \]
+$$ \text{Tasa de Manejo Ambulatorio Correcto} = \frac{\text{Pacientes Ambulatorios Correctamente Identificados}}{\text{Total de Pacientes que Pueden Ser Ambulatorios}}$$
 
 ### 3. Costo de Falsos Positivos (CFP)
 Evalúa el costo asociado con clasificar incorrectamente a un paciente como hospitalario cuando no lo necesita, lo que puede resultar en recursos hospitalarios desperdiciados.
 
-\[ \text{CFP} = \text{Costo por Falso Positivo} \times \text{Número de Falsos Positivos} \]
+$$ \text{CFP} = \text{Costo por Falso Positivo} \times \text{Número de Falsos Positivos} $$
 
 ### 4. Costo de Falsos Negativos (CFN)
 Evalúa el costo asociado con clasificar incorrectamente a un paciente como ambulatorio cuando realmente necesita hospitalización, lo que puede llevar a complicaciones de salud y costos de tratamiento adicionales.
 
-\[ \text{CFN} = \text{Costo por Falso Negativo} \times \text{Número de Falsos Negativos} \]
+$$ \text{CFN} = \text{Costo por Falso Negativo} \times \text{Número de Falsos Negativos} $$
 
 ### 5. Ahorro en Recursos Hospitalarios
 Calcula el ahorro en recursos hospitalarios (como camas, personal médico y medicación) debido a la correcta identificación de pacientes ambulatorios.
 
-\[ \text{Ahorro en Recursos Hospitalarios} = \text{Recursos Ahorrados por Manejo Ambulatorio Correcto} \times \text{Número de Pacientes Ambulatorios Correctamente Identificados} \]
+$$ \text{Ahorro en Recursos Hospitalarios} = \text{Recursos Ahorrados por Manejo Ambulatorio Correcto} \times \text{Número de Pacientes Ambulatorios Correctamente Identificados} $$
 
 ### 6. Mejora en la Capacidad Hospitalaria
 Mide el aumento en la capacidad del hospital para manejar casos graves debido a una mejor clasificación de pacientes ambulatorios.
 
-\[ \text{Mejora en la Capacidad Hospitalaria} = \frac{\text{Número de Pacientes Ambulatorios Correctamente Identificados}}{\text{Capacidad Total del Hospital}} \]
+$$ \text{Mejora en la Capacidad Hospitalaria} = \frac{\text{Número de Pacientes Ambulatorios Correctamente Identificados}}{\text{Capacidad Total del Hospital}} $$
 
 ### 7. Tiempo de Respuesta Médica
 Evalúa la reducción en el tiempo de respuesta médica debido a la correcta clasificación de pacientes, permitiendo un tratamiento más rápido y eficiente.
 
-\[ \text{Reducción en el Tiempo de Respuesta} = \text{Tiempo Promedio de Respuesta Antes del Modelo} - \text{Tiempo Promedio de Respuesta Después del Modelo} \]
+$$ \text{Reducción en el Tiempo de Respuesta} = \text{Tiempo Promedio de Respuesta Antes del Modelo} - \text{Tiempo Promedio de Respuesta Después del Modelo} $$
 
 
 ## 4. Técnicas de aprendizaje 
@@ -70,32 +72,32 @@ Para evaluar la calidad de un modelo de identificación de pacientes hospitalari
 ### 1. Exactitud (Accuracy)
 La exactitud mide el porcentaje de predicciones correctas sobre el total de predicciones. Es una métrica general que puede ser útil, pero no siempre es adecuada en casos de desbalance de clases.
 
-\[ \text{Exactitud} = \frac{TP + TN}{TP + TN + FP + FN} \]
+$$ \text{Exactitud} = \frac{TP + TN}{TP + TN + FP + FN} $$
 
 ### 2. Precisión (Precision)
 La precisión, también conocida como valor predictivo positivo, mide la proporción de verdaderos positivos sobre el total de predicciones positivas. Es especialmente importante cuando el costo de una falsa alarma es alto.
 
-\[ \text{Precisión} = \frac{TP}{TP + FP} \]
+$$ \text{Precisión} = \frac{TP}{TP + FP} $$
 
 ### 3. Sensibilidad o Recall
 La sensibilidad, también conocida como recall o tasa de verdaderos positivos, mide la proporción de verdaderos positivos sobre el total de positivos reales. Es crucial para asegurarse de que los casos de pacientes hospitalarios se identifican correctamente.
 
-\[ \text{Sensibilidad} = \frac{TP}{TP + FN} \]
+$$ \text{Sensibilidad} = \frac{TP}{TP + FN} $$
 
 ### 4. Especificidad
 La especificidad mide la proporción de verdaderos negativos sobre el total de negativos reales. Es útil para evaluar cómo el modelo maneja los pacientes ambulatorios.
 
-\[ \text{Especificidad} = \frac{TN}{TN + FP} \]
+$$ \text{Especificidad} = \frac{TN}{TN + FP} $$
 
 ### 5. Valor Predictivo Negativo (NPV)
 El valor predictivo negativo mide la proporción de verdaderos negativos sobre el total de predicciones negativas.
 
-\[ \text{NPV} = \frac{TN}{TN + FN} \]
+$$ \text{NPV} = \frac{TN}{TN + FN} $$
 
 ### 6. F1-Score
 El F1-Score es la media armónica de la precisión y la sensibilidad, proporcionando una métrica balanceada que considera tanto falsos positivos como falsos negativos.
 
-\[ \text{F1-Score} = 2 \cdot \frac{\text{Precisión} \cdot \text{Sensibilidad}}{\text{Precisión} + \text{Sensibilidad}} \]
+$$ \text{F1-Score} = 2 \cdot \frac{\text{Precisión} \cdot \text{Sensibilidad}}{\text{Precisión} + \text{Sensibilidad}} $$
 
 ### 7. Área Bajo la Curva ROC (AUC-ROC)
 El AUC-ROC mide la capacidad del modelo para distinguir entre las clases. Un valor de AUC cercano a 1 indica un modelo excelente, mientras que un valor cercano a 0.5 indica un modelo que no tiene capacidad discriminativa.
